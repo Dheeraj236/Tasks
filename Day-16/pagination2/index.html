@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+ 
+</head>
+
+<body>
+
+  <h1>calculator</h1>
+  <div class="calculator">
+    <div class="text" id="inputBox">
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary"  onclick=getVal(7)>7</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary" onclick=getVal(8)>8</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary" onclick=getVal(9)>9</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary" onclick="getVal('+')">+</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary" onclick=getVal(4)>4</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary" onclick=getVal(5)>5</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary" onclick=getVal(6)>6</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary" onclick="getVal('-')">-</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary" onclick=getVal(1)>1</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary" onclick=getVal(2)>2</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary" onclick=getVal(3)>3</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary" onclick="getVal('*')">*</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <button type="button" class="btn btn-primary" onclick=getVal(0)>0</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary" onclick="getVal('.')">.</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary" onclick="getVal('/')">/</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary" onclick="getVal('%')">%</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <button id="clear" type="button" class="btn btn-dark" onclick=clr()>C</button>
+      </div>
+      <div class="col-6">
+        <button type="button" class="btn btn-success" onclick=eq()>=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
